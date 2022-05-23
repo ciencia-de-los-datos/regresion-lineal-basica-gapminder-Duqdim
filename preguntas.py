@@ -81,6 +81,7 @@ def pregunta_03():
     y_life = df['life'].values.reshape(139,1)
 
     # Importe LinearRegression
+
     from sklearn.linear_model import LinearRegression
 
 
@@ -92,7 +93,7 @@ def pregunta_03():
     prediction_space  = np.linspace(
         X_fertility.min(),
         X_fertility.max(),
-    ).reshape(10,1)
+    ).reshape(50,1)
 
     # Entrene el modelo usando X_fertility y y_life
     reg.fit(X_fertility, y_life)
